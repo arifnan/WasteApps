@@ -22,4 +22,16 @@
         android:name="com.example.wasteapps.home.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.wasteapps.home.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigatation_ubah_profile"
+        android:name="com.example.wasteapps.home.ui.profile.ubah_profile.ui.main.UbahProfileFragment"
+        android:label="@string/title_ubah_profile"
+        tools:layout="@layout/activity_ubah_profile" />
 </navigation>

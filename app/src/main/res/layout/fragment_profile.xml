@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/my_photo"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/nanda"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.15" />
+
+        <TextView
+            android:id="@+id/my_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/nama_user"
+            app:layout_constraintEnd_toEndOf="@id/my_photo"
+            app:layout_constraintStart_toStartOf="@id/my_photo"
+            app:layout_constraintTop_toBottomOf="@id/my_photo" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/email"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            app:layout_constraintEnd_toEndOf="@id/my_name"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="@id/my_name"
+            app:layout_constraintTop_toBottomOf="@id/my_name" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/card_2"
+            app:cardElevation="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/email">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/btn_ubah_profile"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="300dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"
+                    android:text="Ubah Profile"
+                    android:textSize="14sp"
+                    android:textColor="@color/black" />
+                <Button
+                    android:id="@+id/btn_daftar_mutasi"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="300dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"
+                    android:text="Daftar Mutasi"
+                    android:textSize="14sp"
+                    android:textColor="@color/black" />
+                <Button
+                    android:id="@+id/btn_help_center"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="300dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"
+                    android:text="Pusat Bantuan"
+                    android:textSize="14sp"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btn_privacy_policy"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="300dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"
+                    android:text="Kebijakan Privasi"
+                    android:textSize="14sp"
+                    android:textColor="@color/black" />
+                <Button
+                    android:id="@+id/btn_keluar"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="300dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"
+                    android:text="Keluar"
+                    android:textSize="14sp"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

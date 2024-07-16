@@ -11,6 +11,15 @@
     <string name="profile">Profile</string>
     <string name="hello">Hello</string>
     <string name="user">User</string>
+    <string name="nama_user">Nanda Nan Arif H</string>
+    <string name="email">arifnanda79@gmail.com</string>
+    <string name="masukkan_email_anda">masukkan email anda</string>
+    <string name="password">password</string>
+    <string name="masukkan_password">masukkan password</string>
+    <string name="lupa_password">lupa password</string>
+    <string name="daftar_sekarang">daftar sekarang</string>
+    <string name="text_atau">atau</string>
+    <string name="login_button">login button</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
@@ -51,4 +60,7 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="title_profile">Notifications</string>
+    <string name="title_ubah_profile">Ubah profile></string>
+    <string name="title_activity_kebijakan">KebijakanActivity</string>
 </resources>

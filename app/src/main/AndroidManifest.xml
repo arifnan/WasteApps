@@ -13,6 +13,20 @@
         android:theme="@style/Theme.WasteApps"
         tools:targetApi="31">
         <activity
+            android:name=".aut.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".home.ui.profile.pusat_bantuan.HelpCenterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".home.ui.profile.kebijakan_privasi.KebijakanActivity"
+            android:exported="false"
+            android:label="@string/title_activity_kebijakan"
+            android:theme="@style/Theme.WasteApps" />
+        <activity
+            android:name=".home.ui.profile.ubah_profile.UbahProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" />
         <activity

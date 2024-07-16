@@ -7,9 +7,9 @@
     android:orientation="vertical"
     tools:context=".home.ui.home.HomeFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="424dp"
-        android:layout_height="710dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/imageView2"
@@ -17,98 +17,157 @@
             android:layout_height="130dp"
             android:layout_marginBottom="601dp"
             android:background="@color/primary"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imageView2"
             app:layout_constraintVertical_bias="0.476" />
+
+        <ImageView
+            android:layout_width="337dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="160dp"
+            android:background="@drawable/banner2">
+
+
+        </ImageView>
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/circleImageView"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:layout_marginEnd="336dp"
-            android:layout_marginBottom="612dp"
-            android:src="@drawable/nanda"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="34dp"
+            android:layout_marginBottom="106dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/nanda" />
 
         <TextView
             android:id="@+id/hello"
             android:layout_width="100dp"
             android:layout_height="20dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="36dp"
+            android:layout_alignStart="@+id/user"
+            android:layout_marginTop="33dp"
             android:text="Halo"
             android:textColor="@color/white"
             android:textSize="20dp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/circleImageView"
             app:layout_constraintTop_toTopOf="@+id/imageView2" />
-
-        <TextView
-            android:id="@+id/user"
-            android:layout_width="1000dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="8dp"
-            android:text="Nanda Nan Arif"
-            android:textColor="@color/white"
-            android:textSize="18dp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/circleImageView"
-            app:layout_constraintTop_toBottomOf="@+id/hello" />
 
         <ImageView
             android:id="@+id/image_view_location"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="8dp"
-            android:src="@drawable/ic_location"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/user" />
+            android:layout_marginStart="98dp"
+            android:layout_marginTop="81dp"
+            android:layout_marginEnd="1dp"
+            android:src="@drawable/ic_location" />
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="57dp"
+            android:text="Nanda Nan Arif"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="100dp"
             android:layout_height="25dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginTop="8dp"
+            android:layout_alignEnd="@+id/user"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="81dp"
+            android:layout_marginEnd="75dp"
             android:text="Bireun"
             android:textColor="@color/white"
-            android:textSize="18dp"
-            app:layout_constraintLeft_toRightOf="@id/image_view_location"
-            app:layout_constraintTop_toBottomOf="@+id/user" />
+            android:textSize="18dp" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="47dp"
             android:layout_height="47dp"
-            app:cardCornerRadius="10dp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-            app:layout_constraintEnd_toEndOf="@+id/imageView2"
-            app:layout_constraintHorizontal_bias="0.898"
-            app:layout_constraintStart_toStartOf="@+id/user"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.559">
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="50dp"
+            app:cardCornerRadius="10dp">
 
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/white"
-                android:src="@drawable/ic_notifications_black_24dp"></ImageButton>
+                android:src="@drawable/ic_notifications_black_24dp">
+
+            </ImageButton>
 
         </androidx.cardview.widget.CardView>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvInput"
+            android:layout_width="114dp"
+            android:layout_height="109dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="325dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="-51dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:src="@drawable/banner2">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_truk" />
 
-        </ImageView>
-    </androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                android:id="@+id/jemput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:text="   Jemput Sampah "
+                android:textColor="@color/primary"
+                android:textSize="13dp"
+                android:textStyle="bold" />
 
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_customer"
+            android:layout_width="114dp"
+            android:layout_height="109dp"
+            android:layout_alignStart="@+id/cvInput"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="324dp"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <ImageView
+                android:layout_width="58dp"
+                android:layout_height="63dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_cs" />
+
+            <TextView
+                android:id="@+id/cs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:text="  Customer Service"
+                android:textColor="@color/primary"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
 </LinearLayout>
